@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&family=Source+Sans+Pro:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+main {
+  height: 100%;
+  width: 100%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #064663;
+}
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #bf1722;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* style header */
+header {
+  background-color: #04293a;
+}
+.app-bar {
+  display: flex;
+  margin: 0 20px 0;
+}
+.app-bar h1 {
+  flex-grow: 3;
+  padding-top: 10px;
+  color: white;
+}
+.app-bar a {
+  text-decoration: none;
+  color: white;
+}
+.app-bar li:hover,
+li:focus {
+  outline: 1px solid white;
+  padding: auto;
+  font-weight: bold;
+}
+#hamburger {
+  display: none;
+}
+.app-bar nav li {
+  flex-grow: 1;
+  display: inline-block;
+  list-style-type: none;
+  padding: 1.3em;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 380px;
+  width: 100%;
+  margin: auto;
+  background-image: url("../public/hero-image_2.jpg");
+  background-position: center;
+}
+.hero__card {
+  margin-top: 30px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  opacity: 80%;
+}
+.hero__inner {
+  text-align: center;
+  max-width: 800px;
+}
+.hero__title {
+  font-weight: 500;
+  font-size: 36px;
+}
+.hero__tagline {
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* style main */
+main h2 {
+  text-align: center;
+  color: white;
+}
+
+/* explore style */
+.explore-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px 10px;
+  width: 1000px;
+  margin: auto;
+  padding: 10px;
+}
+.explore-item {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 0.8em;
+  height: fit-content;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+.explore-thumbnail {
+  width: 100%;
+}
+.more-button {
+  width: 80px;
+  height: 50px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: cornflowerblue;
+  color: white;
+  border: 0;
+  font-size: 1.3em;
+}
+.more-button:hover {
+  background-color: green;
+}
+
+/* detail style */
+.detailresto-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  width: 1000px;
+  margin: 20px auto;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+.detail-item {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 0.8em;
+  margin: 5px;
+  padding: 15px;
+}
+.food-menu, .drink-menu {
+  font-weight: bold;
+}
+.review {
+  background-color: black;
+  color: white;
+  opacity: 60%;
+  border-radius: 10px;
+  padding: 10px;
+}
+.review p {
+  width: 80%;
+}
+.detail-thumbnail {
+  width: 70%;
+  align-items: center;
+  margin: auto;
+}
+
+.addreview-container h3{
+  text-align: center;
+}
+
+/* add review */
+.addreview-container {
+  background-color: white;
+  width: 700px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+.input-section > form > .input > label {
+  font-weight: bold;
+  font-size: medium;
+}
+
+.input-section > form > .input > input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border-color: #051367;
+}
+
+.input-section > form > .input-inline > label {
+  color: cornflowerblue;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.button-submit {
+  width: auto;
+  border-radius: 16px;
+  padding: 12px 24px;
+  border:2px solid #051367;
+  background: #1597BB;
+  color: white;
+  margin-top: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.button-submit:hover{
+  background: blue;
+  color: white;
+}
+
+/* Like */
+.like {
+  font-size: 18px;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background-color: #db0000;
+  color: white;
+  border: 0;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* style footer */
+footer {
+  background-color: #16213e;
+  margin-top: 20px;
+  padding: 16px;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+}
+
+@media screen and (max-width: 580px) {
+  .app-bar {
+    flex-direction: column;
+  }
+  .app-bar h1 {
+    text-align: center;
+  }
+  .app-bar nav li {
+    display: block;
+    background-color: #191919;
+  }
+  .app-bar a:focus {
+    padding: 5px;
+  }
+  #hamburger {
+    padding-left: 13px;
+    width: 55px;
+    height: 55px;
+    margin-bottom: 15px;
+    display: block;
+  }
+  #drawer {
+    position: absolute;
+    width: 200px;
+    height: fit-content;
+    margin-top: -105px;
+    transform: translate(-450px, 0);
+    transition: ease-in;
+  }
+  #drawer.open {
+    position: relative;
+    transform: translate(-60px, 0);
+    transition: transform 0.3s ease-in-out;
+  }
+  #hamburger {
+    font-size: 32px;
+    text-decoration: none;
+    color: black;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .explore-container {
+    grid-template-columns: 1fr;
+  }
+  .explore-thumbnail {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 20px 0;
+  }
+  .detail-thumbnail {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hero__card {
+    padding: 10px;
+  }
+  .explore-container {
+    width: 95%;
+  }
+  .detailresto-container {
+    width: 95%;
+  }
+  .addreview-container {
+    width: 80%;
+  }
+}
