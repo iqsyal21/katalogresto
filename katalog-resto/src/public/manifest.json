@@ -1,0 +1,35 @@
+{
+    "name": "Restaurant Apps Lite",
+    "short_name": "Resto Lite",
+    "description": "Free Catalogue Restaurant for you",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#064663",
+    "theme_color": "#04293a",
+    "icons": [
+        {
+            "src": "/icons/icon_150.png",
+            "sizes": "150x150",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icons/icon_200.png",
+            "sizes": "200x200",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icons/icon_512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icons/icon_550.png",
+            "sizes": "550x550",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
