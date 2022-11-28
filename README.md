@@ -1,2 +1,2 @@
-# katalogresto
-submission project
+# preview
+https://katalog-resto.netlify.app/
